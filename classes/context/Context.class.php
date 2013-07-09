@@ -152,7 +152,7 @@ class Context {
 	}
 
 	/**
-	 * Cunstructor
+	 * Constructor
 	 *
 	 * @return void
 	 */
