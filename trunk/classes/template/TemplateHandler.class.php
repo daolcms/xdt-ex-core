@@ -65,6 +65,10 @@ class TemplateHandler {
 	{
 		// verify arguments
 		if(substr($tpl_path,-1)!='/') $tpl_path .= '/';
+		if(!is_dir($tpl_path))
+		{
+		return;
+		}
 		if(!file_exists($tpl_path.$tpl_filename)&&file_exists($tpl_path.$tpl_filename.'.html')) $tpl_filename .= '.html';
 
 		// create tpl_file variable
