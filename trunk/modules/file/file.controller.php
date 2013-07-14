@@ -89,17 +89,26 @@
 		 * @return Object
          **/
         function procFileImageResize() {
-            $source_src = Context::get('source_src');
+            $file_srl = Context::get('file_srl');
             $width = Context::get('width');
             $height = Context::get('height');
-            $type = Context::get('type');
-            $output_src = Context::get('output_src');
 
-            if(!$source_src || !$width) return new Object(-1,'msg_invalid_request');
-            if(!$output_src){
-                $output_src = $source_src . '.resized' . strrchr($source_src,'.');
+            if(!$file_srl || !$width)
+			{
+                return new Object(-1,'msg_invalid_request');
             }
-            if(!$type) $type = 'ratio';
+	
+			$oFileModel = getModel('file');
+			$fileInfo = $oFileModel->getFile($file_srl);
+			if(!$fileInfo || $fileInfo->direct_download != 'Y')
+			{
+				return new Object(-1,'msg_invalid_request');
+			}
+	
+			$source_src = $fileInfo->uploaded_filename;
+			$output_src = $source_src . '.resized' . strrchr($source_src,'.');
+	
+			$type = 'ratio';
             if(!$height) $height = $width-1;
 
             if(FileHandler::createImageFile($source_src,$output_src,$width,$height,'','ratio')){
