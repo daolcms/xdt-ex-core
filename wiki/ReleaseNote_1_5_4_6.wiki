@@ -1,0 +1,15 @@
+#sidebar Releases
+
+=XDT EX 1.5.4.6 Release Note=
+
+<wiki:toc />
+
+==For Users==
+
+===Defect===
+
+ * welcome_page 문구 수정 (r21)~(r33) 
+ 
+ ===Enhancement===
+ 
+ * 웹쉘(webshell) 방어코드 추가 (r34) ~ (r43) 
