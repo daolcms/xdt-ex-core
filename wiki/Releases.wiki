@@ -1,6 +1,6 @@
 #summary Releases
 
-= XE Releases =
+= XDT EX Releases =
 [ReleaseNote_1_5_4_7 1.5.4.7]
 
 [ReleaseNote_1_5_4_6 1.5.4.6]
