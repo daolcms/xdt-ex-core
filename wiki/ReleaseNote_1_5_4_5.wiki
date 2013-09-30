@@ -1,0 +1,12 @@
+#sidebar Releases
+
+=XDT EX 1.5.4.5 Release Note=
+
+<wiki:toc />
+
+==For Users==
+
+===Defect===
+
+ * 레이아웃 생성시 잘못된 요청입니다, 첨부파일 다운로드 오류 수정`[`issue 1 , issue 2 , issue 3 도라미`]`
+ * Tizen OS 모바일 OS User-Agent에 추가
