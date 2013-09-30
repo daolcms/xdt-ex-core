@@ -1,0 +1,10 @@
+#sidebar Releases
+
+=XDT EX 1.5.4.7 Release Note=
+
+<wiki:toc />
+
+===Defect===
+
+  * XSS 보안 취약점 방어.
+  * CSRF 보안 취약점 방어.
