@@ -90,14 +90,6 @@
             unset($extra_vars->apply_layout);
 			unset($extra_vars->apply_mobile_view);
 
-			//Security
-            $security = new Security($extra_vars);
-            foreach($extra_vars as $key=>$val)
-            {
-                    if(substr($value->title,0,12)=='$user_lang->') continue;
-                    $security->encodeHTML($key);
-            }
-
             $args = Context::gets('layout_srl','title');
             // Get layout information
             $oLayoutModel = &getModel('layout');
