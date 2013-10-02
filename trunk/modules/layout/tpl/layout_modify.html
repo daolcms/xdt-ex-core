@@ -49,11 +49,6 @@
 	</ul>
 
 	<block cond="$act == 'dispLayoutAdminModify'" loop="$selected_layout->extra_var => $name, $var">
-	<!--@if(strpos($var->value, "$user_lang->") === false)-->
-		{@ $var->value = htmlspecialchars_decode($var->value)}
-	<!--@else-->
-		{@ $var->value = htmlspecialchars($var->value)}
-	<!--@end-->
 		<block cond="!$not_first && !$var->group"><ul></block>
 		<block cond="$group != $var->group">
 			<block cond="$not_first"></ul></block>
