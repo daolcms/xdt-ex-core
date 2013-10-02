@@ -261,7 +261,7 @@
             else $vars = $xml_doc->attrs;
 
             $widget = $vars->widget;
-            if(!$widget) return $match[0];
+            if(!$widget) return $matches[0];
             unset($vars->widget);
 
             return $this->execute($widget, $vars, $this->javascript_mode);
