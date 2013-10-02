@@ -819,7 +819,7 @@
 
 			$obj->member_srl = $oComment->get('member_srl');
 			$obj->module_srl = $oComment->get('module_srl');
-			$obj->comment_srl = $oComment->get('comment');
+			$obj->comment_srl = $oComment->get('comment_srl');
 			$obj->update_target = ($point < 0) ? 'blamed_count' : 'voted_count';
 			$obj->point = $point;
 			$obj->before_point = ($point < 0) ? $oComment->get('blamed_count') : $oComment->get('voted_count');
