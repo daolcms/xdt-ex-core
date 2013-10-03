@@ -8,8 +8,8 @@
 
 ===Defect===
 
-  * XSS 보안 취약점 방어.(r44),(r49)
-  * CSRF 보안 취약점 방어.(r45)
+  * XSS 보안 취약점 방어.(r44)
+  * CSRF 보안 취약점 방어.(r45),(r49)
   * context에서 cpage 확인하도록 수정.(r61)
   * procAdminLogout에서 post 허용.(r64)
   * 위젯모듈 오류 수정.(r65),(r66)
@@ -18,7 +18,4 @@
   * 타이틀 관련 취약점 방어.(r70)
   * Youtube 동영상 패턴 추가.(r71)
   * XDT Whitesquare 오류 수정 (r72)~(r75)
-
-
-
 
