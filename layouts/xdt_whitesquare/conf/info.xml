@@ -2,11 +2,16 @@
 <layout version="0.2">
     <title xml:lang="ko">XE Design Team - White Square</title>
     <description xml:lang="ko">XDT 이동현 개발자가 최초로 공식 배포한 화이트스퀘어 레이아웃 입니다.</description>
-    <version>2.0</version>
-    <date>2013-01-16</date>
+    <version>2.1</version>
+    <date>2013-09-27</date>
 
-    <author email_address="dlehdankaf@gmail.com" link="http://www.xedesignteam.com/">
+    <author email_address="support@xdt.kr" link="http://www.xedesignteam.com/">
         <name xml:lang="ko">이동현</name>
+		<name xml:lang="en">Lee Donghyeon</name>
+    </author>
+    <author email_address="support@xdt.kr" link="http://www.xedesignteam.com/">
+        <name xml:lang="ko">범진혁</name>
+		<name xml:lang="en">Beom Jinhyeok</name>
     </author>
     <menus>
 		<menu name="main_menu" maxdepth="1" default="true">
@@ -38,6 +43,30 @@
 				<title xml:lang="ko">아니오, 사용하지 않겠습니다.</title>
 				<value>N</value>
 			</options>
+		</var>
+		<var name="banner_image_1" type="image">
+			<title xml:lang="ko">베너 이미지 1</title>
+			<description xml:lang="ko">베너 1번 슬라이드에 출력될 이미지 입니다. 960*300 크기의 이미지를 권장합니다.</description>
+		</var>
+		<var name="banner_url_1" type="text">
+			<title xml:lang="ko">베너 주소 1</title>
+			<description xml:lang="ko">베너 1번 슬라이드를 클릭하면 이동될 주소입니다.</description>
+		</var>
+		<var name="banner_image_2" type="image">
+			<title xml:lang="ko">베너 이미지 2</title>
+			<description xml:lang="ko">베너 2번 슬라이드에 출력될 이미지 입니다. 960*300 크기의 이미지를 권장합니다.</description>
+		</var>
+		<var name="banner_url_2" type="text">
+			<title xml:lang="ko">베너 주소 1</title>
+			<description xml:lang="ko">베너 2번 슬라이드를 클릭하면 이동될 주소입니다.</description>
+		</var>
+		<var name="banner_image_3" type="image">
+			<title xml:lang="ko">베너 이미지 3</title>
+			<description xml:lang="ko">베너 3번 슬라이드에 출력될 이미지 입니다. 960*300 크기의 이미지를 권장합니다.</description>
+		</var>
+		<var name="banner_url_3" type="text">
+			<title xml:lang="ko">베너 주소 3</title>
+			<description xml:lang="ko">베너 3번 슬라이드를 클릭하면 이동될 주소입니다.</description>
 		</var>
 		<var name="body_style" type="select">
 			<title xml:lang="ko">본문 스타일</title>
