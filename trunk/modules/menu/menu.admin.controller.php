@@ -138,10 +138,14 @@
             unset($source_args->act);
             if($source_args->menu_open_window!="Y") $source_args->menu_open_window = "N";
             if($source_args->menu_expand !="Y") $source_args->menu_expand = "N";
-
+			
+			//YJSoft Patch : 특정 그룹만 보이게 했다가 다시 모든 사용자에게 보이게 만들면
+			//자꾸 그룹 권한으로 설정되는 문제점 수정
+            //if(!is_array($source_args->group_srls))
+			if(!is_array($source_args->group_srls)) $source_args->group_srls = str_replace('|@|',',',$source_args->group_srls);
+			if($source_args->menu_grant_default == -2) $source_args->group_srls = implode(',', $source_args->group_srls);
 			if($source_args->menu_grant_default == -1) $source_args->group_srls = -1;
-            if(!is_array($source_args->group_srls)) $source_args->group_srls = str_replace('|@|',',',$source_args->group_srls);
-			else $source_args->group_srls = implode(',', $source_args->group_srls);
+			if($source_args->menu_grant_default == 0) $source_args->group_srls = '';
 
             $source_args->parent_srl = (int)$source_args->parent_srl;
 
