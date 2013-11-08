@@ -137,6 +137,10 @@
 		 * @return object
 		 */
         function insertComment($obj, $manual_inserted = false) {
+			if(!$manual_inserted && !checkCSRF())
+			{
+				return new Object(-1, 'msg_invalid_request');
+			}	
 
 		// check if comment's module is using comment validation and set the publish status to 0 (false)
 		// for inserting query, otherwise default is 1 (true - means comment is published)
