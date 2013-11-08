@@ -1,0 +1,17 @@
+#sidebar Releases
+
+=XDT EX 1.5.4.8 Release Note=
+
+<wiki:toc />
+
+==For Users==
+
+===Defect===
+
+ * phar 파일 업로드 차단 (r80)
+ 
+ ===Enhancement===
+ 
+ * 업로드 해킹 방어코드 추가 (r81),(r84)
+ * 설치화면 언어파일 개선 (r82)
+ * 코멘트에도 checkCSRF() 적용하도록 개선 (r83)
