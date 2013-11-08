@@ -612,6 +612,9 @@
 		 * @return void
          **/
         function insertProfileImage($member_srl, $target_file) {
+			// Check uploaded file
+			if(!checkUploadedFile($target_file)) return;
+
             $oModuleModel = &getModel('module');
             $config = $oModuleModel->getModuleConfig('member');
             // Get an image size
@@ -671,6 +674,9 @@
 		 * @return void
          **/
         function insertImageName($member_srl, $target_file) {
+			// Check uploaded file
+			if(!checkUploadedFile($target_file)) return;
+
             $oModuleModel = &getModel('module');
             $config = $oModuleModel->getModuleConfig('member');
             // Get an image size
@@ -774,6 +780,9 @@
 		 * @return void
          **/
         function insertImageMark($member_srl, $target_file) {
+			// Check uploaded file
+			if(!checkUploadedFile($target_file)) return;
+
             $oModuleModel = &getModel('module');
             $config = $oModuleModel->getModuleConfig('member');
             // Get an image size
