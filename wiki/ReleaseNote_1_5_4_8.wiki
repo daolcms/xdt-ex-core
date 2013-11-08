@@ -8,6 +8,7 @@
 
 ===Defect===
 
+ * 메뉴 권한 오류 수정 (r78)
  * phar 파일 업로드 차단 (r80)
  
  ===Enhancement===
