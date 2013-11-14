@@ -106,7 +106,7 @@
             if($count) {
             if($isMessage)
 			{
-            $message = sprintf(Context::getLang('msg_alert_limited_by_config'), $interval);
+			$message = sprintf(Context::getLang('msg_alert_limited_by_config'), $interval);
             }
             else
             {
