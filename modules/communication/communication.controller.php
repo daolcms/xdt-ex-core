@@ -126,7 +126,7 @@
             $receiver_args->content = $content;
             $receiver_args->readed = 'N';
             $receiver_args->regdate = date("YmdHis");
-
+			
 			      // Call a trigger (before)
             $trigger_args = new stdClass();
             $trigger_args->sender_srl = $sender_srl;
@@ -147,13 +147,13 @@
                     return $output;
                 }
             }
-            // messages to save in the receiver's message box
+			// messages to save in the receiver's message box
             $output = executeQuery('communication.sendMessage', $receiver_args);
             if(!$output->toBool()) {
                 $oDB->rollback();
                 return $output;
             }
-
+			
 			      // Call a trigger (after)
             $output = ModuleHandler::triggerCall('communication.sendMessage', 'after', $trigger_args);
             if(!$output->toBool()) {
