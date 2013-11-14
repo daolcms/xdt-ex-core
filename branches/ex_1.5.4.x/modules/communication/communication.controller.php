@@ -127,6 +127,16 @@
             $receiver_args->readed = 'N';
             $receiver_args->regdate = date("YmdHis");
 
+			// Call a trigger (before)
+            $trigger_args = new stdClass();
+            $trigger_args->sender_srl = $sender_srl;
+            $trigger_args->receiver_srl = $receiver_srl;
+            $trigger_args->title = $title;
+            $trigger_args->content = $content;
+            $trigger_args->sender_log = $sender_log;
+            $output = ModuleHandler::triggerCall('communication.sendMessage', 'before', $trigger_args);
+            if(!$output->toBool()) return $output;
+
             $oDB = &DB::getInstance();
             $oDB->begin();
             // messages to save in the sendor's message box
@@ -143,6 +153,14 @@
                 $oDB->rollback();
                 return $output;
             }
+
+			// Call a trigger (after)
+            $output = ModuleHandler::triggerCall('communication.sendMessage', 'after', $trigger_args);
+            if(!$output->toBool()) {
+            $oDB->rollback();
+            return $output;
+            }
+
             // create a flag that message is sent (in file format) 
             $flag_path = './files/member_extra_info/new_message_flags/'.getNumberingPath($receiver_srl);
             FileHandler::makeDir($flag_path);
