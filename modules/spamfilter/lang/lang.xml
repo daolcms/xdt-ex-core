@@ -188,7 +188,7 @@ l'article qui comporte le mot ne sera pas affichagé.]]></value>
 		<value xml:lang="en"><![CDATA[Posting an article within %s seconda is not allowed.\n If you keep trying, your IP address will be blacklisted.]]></value>
 		<value xml:lang="jp"><![CDATA[%s秒以内の書き込みは禁止されます。続けて行うとスパムとして認識され、禁止IPに登録されます。]]></value>
 		<value xml:lang="zh-CN"><![CDATA[%s秒之内不能连续发表新主题。如再次尝试会将您的IP登录在黑名单。]]></value>
-		<value xml:lang="zh-TW"><![CDATA[%s秒之內不能連續發表新主題。如您繼續再試系統將自動禁止您的IP。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[%s秒之內不能連續發表新主題。如再次嘗試會將您的IP登錄在黑名單。]]></value>
 		<value xml:lang="fr"><![CDATA[L'Affichage d'un article en %s secondes n'est pas permis.\n Si vous essayez encore, votre adresse IP peut être enrégistré dans la liste noire.]]></value>
 		<value xml:lang="ru"><![CDATA[Размещение статьи с интервалом в %s секунд не разрешено.\n Если Вы будете многократно пытаться это сделать, Ваш IP-адрес может быть добавлен в черный список.]]></value>
 		<value xml:lang="es"><![CDATA[Se prohibe poestear antes de %s segundos.\n Si Usted trata varias veces, su dirección IP puede ser agregada en la lista negra.]]></value>
